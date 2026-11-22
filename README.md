@@ -8,7 +8,7 @@
 [![Diagrams](https://img.shields.io/badge/Diagrams-400%20Mermaid-ff69b4.svg)](docs/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg)](#贡献)
 
-**在线阅读**：<https://docs.minims.cn/share/java-arch>
+**在线阅读**：<https://docs.minims.cn/share/java-deep-dive>
 
 ---
 
