@@ -1,4 +1,6 @@
-# Java 深水区
+# Java 观栈
+
+![Java深水区知识库封面生成 (1)(1).png](https://oss.towao.com/proxy/plain/img/2026/20261122220205136612454.png)
 
 > **123 篇原创深度文章 · 167 万字 · 400 张手绘级架构图** —— 一套能让你「读得懂源码、答得出面试、扛得住线上」的 Java 架构知识体系。
 
@@ -8,7 +10,7 @@
 [![Diagrams](https://img.shields.io/badge/Diagrams-400%20Mermaid-ff69b4.svg)](docs/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg)](#贡献)
 
-**在线阅读**：<https://docs.minims.cn/share/java-deep-dive>
+**在线阅读**：<https://docs.minims.cn/share/java-stackview>
 
 ---
 
