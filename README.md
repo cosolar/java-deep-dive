@@ -12,7 +12,7 @@
 >
 > 面向高级工程师与架构师的 Java 知识体系，每一篇都走完「**原理 → 源码 → 坑点 → 面试**」的认知闭环。
 
-[![License](https://img.shields.io/badge/License-AGPL--3.0-3b82f6?style=for-the-badge&logo=gnu&logoColor=white)](LICENSE) [![Articles](https://img.shields.io/badge/Articles-123-22c55e?style=for-the-badge&logo=readthedocs&logoColor=white)](docs/) [![Words](https://img.shields.io/badge/Words-167%E4%B8%87-f97316?style=for-the-badge&logo=bookstack&logoColor=white)](docs/) [![Diagrams](https://img.shields.io/badge/Diagrams-400-ec4899?style=for-the-badge&logo=mermaid&logoColor=white)](docs/) [![PRs Welcome](https://img.shields.io/badge/PRs_Welcome-8b5cf6?style=for-the-badge&logo=github&logoColor=white)](#-贡献)
+[![License](https://img.shields.io/badge/License-AGPL--3.0-3b82f6?style=for-the-badge&logo=gnu&logoColor=white)](LICENSE) [![Articles](https://img.shields.io/badge/Articles-167-22c55e?style=for-the-badge&logo=readthedocs&logoColor=white)](docs/) [![Words](https://img.shields.io/badge/Words-264%E4%B8%87-f97316?style=for-the-badge&logo=bookstack&logoColor=white)](docs/) [![Diagrams](https://img.shields.io/badge/Diagrams-546-ec4899?style=for-the-badge&logo=mermaid&logoColor=white)](docs/) [![PRs Welcome](https://img.shields.io/badge/PRs_Welcome-8b5cf6?style=for-the-badge&logo=github&logoColor=white)](#-贡献)
 
 **📚 在线阅读地址：** <https://docs.minims.cn/share/java-stackview>
 
@@ -87,15 +87,15 @@
 | Sentinel | `ProcessorSlotChain` 的责任链 |
 | Raft | 选举限制为什么能防止脑裂 |
 
-### 3️⃣ 400 张 Mermaid 图，全部可编辑
+### 3️⃣ 546 张 Mermaid 图，全部可编辑
 
 不是截图，是**文本化的矢量图**——你可以直接改。涵盖：
 
 > 类图 · 时序图 · 状态机 · 流程图
 
-### 4️⃣ 123 篇按「学习依赖」排序，不是按热度堆砌
+### 4️⃣ 167 篇按「学习依赖」排序，不是按热度堆砌
 
-从「语言」到「AI」，形成一条**完整路径**。你不会在不懂 JVM 的时候被丢去读分布式事务。
+从「语言」到「AI」再到「大数据」，形成一条**完整路径**。你不会在不懂 JVM 的时候被丢去读分布式事务。
 
 ```mermaid
 flowchart LR
@@ -104,7 +104,8 @@ flowchart LR
     C --> D["🏗️ 分布式与微服务"]
     D --> E["💎 架构设计与方法论"]
     E --> F["🤖 AI 与 LLM 工程化"]
-    F --> G["🎯 架构师实战面试"]
+    F --> G["📊 大数据与实时计算"]
+    G --> H["🎯 架构师实战面试"]
 ```
 
 ### 5️⃣ 敢讲「不该用什么」
@@ -117,32 +118,33 @@ flowchart LR
 
 ---
 
-## 🗺️ 内容地图（19 个板块）
+## 🗺️ 内容地图（20 个板块）
 
-**19 个板块，按「语言 → 底层 → 框架 → 数据 → 分布式 → 架构 → 工程 → 方法论 → AI → 面试」递进：**
+**20 个板块，按「语言 → 底层 → 框架 → 数据 → 分布式 → 架构 → 工程 → 方法论 → AI → 大数据 → 面试」递进：**
 
 | 层 | 板块 | 篇数 | 核心内容 |
 |---|---:|---:|---|
-| ☕ **语言与系统底层** | [01 Java 语言核心](docs/01-Java语言核心/) | 4 | 集合源码、泛型擦除、反射代理、Java 8-21 新特性 |
-| | [02 Java 底层与并发](docs/02-Java底层与并发/) | 11 | JVM、GC 调优、JMM、AQS、线程池、Netty |
-| | [03 Linux 与网络](docs/03-Linux与网络/) | 3 | USE 排查法、TCP/IP、epoll 与 IO 多路复用 |
-| 🧩 **框架** | [04 Spring 体系源码](docs/04-Spring体系源码/) | 9 | IOC、循环依赖、AOP、事务失效、MVC 请求链路 |
-| | [05 MyBatis 与持久层](docs/05-MyBatis与持久层/) | 3 | 执行流程、缓存装饰器链、插件、动态 SQL |
-| 🗄️ **数据与中间件** | [06 数据库体系](docs/06-数据库体系/) | 9 | InnoDB、MVCC、锁、SQL 优化、分库分表、NoSQL/NewSQL |
-| | [07 缓存与中间件](docs/07-缓存与中间件/) | 9 | Redis、RocketMQ、Kafka、Elasticsearch、ZooKeeper |
-| 🏗️ **分布式与架构** | [08 分布式理论与共识](docs/08-分布式理论与共识/) | 7 | CAP、分布式锁、ID、幂等、Raft/Paxos |
+| ☕ **语言与系统底层** | [01 Java 语言核心](docs/01-Java语言核心/) | 7 | 集合源码、String 与字符串池、泛型擦除、反射代理、异常日志、Java 8-21 新特性 |
+| | [02 Java 底层与并发](docs/02-Java底层与并发/) | 12 | JVM、GC 调优、JMM、AQS、线程池、ThreadLocal、Netty |
+| | [03 Linux 与网络](docs/03-Linux与网络/) | 6 | USE 排查法、TCP/IP、HTTP/1.1-3、HTTPS/TLS、Nginx、epoll |
+| 🧩 **框架** | [04 Spring 体系源码](docs/04-Spring体系源码/) | 11 | IOC、循环依赖、AOP、事务失效、MVC、Boot 3/4 与 AOT、WebFlux |
+| | [05 MyBatis 与持久层](docs/05-MyBatis与持久层/) | 5 | 执行流程、缓存插件、动态 SQL、连接池、JPA/Hibernate |
+| 🗄️ **数据与中间件** | [06 数据库体系](docs/06-数据库体系/) | 11 | InnoDB、MVCC、锁、SQL 优化、分库分表、PostgreSQL、归档迁移、NoSQL/NewSQL |
+| | [07 缓存与中间件](docs/07-缓存与中间件/) | 10 | Redis、RocketMQ、Kafka、RabbitMQ、Elasticsearch、ZooKeeper |
+| 🏗️ **分布式与架构** | [08 分布式理论与共识](docs/08-分布式理论与共识/) | 8 | CAP、分布式锁、ID、幂等、分布式事务、限流、Raft/Paxos、任务调度 |
 | | [09 微服务体系](docs/09-微服务体系/) | 7 | Nacos、Gateway、Sentinel、Seata、Dubbo |
 | | [10 架构设计能力](docs/10-架构设计能力/) | 5 | DDD、23 种设计模式、架构模式、API 设计、技术选型 |
-| | [11 典型系统设计](docs/11-典型系统设计/) | 4 | 秒杀、支付、IM、短链与 Feed 流 |
-| 🛡️ **工程与稳定性** | [12 高可用与稳定性](docs/12-高可用与稳定性/) | 5 | 高可用设计、性能优化、限流降级、容量规划、故障排查 |
-| | [13 可观测性](docs/13-可观测性/) | 5 | 三大支柱、链路追踪、Prometheus、日志、Arthas |
-| | [14 容器与云原生](docs/14-容器与云原生/) | 4 | Docker、Kubernetes、Istio、CI/CD |
-| | [15 安全设计](docs/15-安全设计/) | 4 | 认证授权、接口安全、Web 安全、Spring Security |
+| | [11 典型系统设计](docs/11-典型系统设计/) | 10 | 秒杀、支付、IM、短链/Feed、订单库存、营销风控、搜索、推送、对象存储、LBS |
+| 🛡️ **工程与稳定性** | [12 高可用与稳定性](docs/12-高可用与稳定性/) | 7 | 高可用设计、性能优化、限流降级、容量规划、故障排查、单元化多活、混沌工程 |
+| | [13 可观测性](docs/13-可观测性/) | 6 | 三大支柱、链路追踪、Prometheus、日志、Arthas、OpenTelemetry |
+| | [14 容器与云原生](docs/14-容器与云原生/) | 6 | Docker、Kubernetes、Istio、CI/CD、K8s 网络、Operator/GitOps |
+| | [15 安全设计](docs/15-安全设计/) | 6 | 认证授权、接口安全、Web 安全、Spring Security、密码学、供应链安全 |
 | | [16 项目治理](docs/16-项目治理/) | 4 | 代码规范、测试体系、配置管理、架构文档 |
 | 💡 **方法论与前沿** | [17 软件开发方法论](docs/17-软件开发方法论/) | 12 | 瀑布、敏捷、Scrum、Kanban、XP、精益/MVP、SAFe、DevOps |
-| | [18 AI 与 LLM 工程化](docs/18-AI与LLM工程化/) | 3 | RAG、Agent/MCP、LLM 应用架构、AI 辅助编程 |
-| 🎯 **出口** | [19 架构师实战面试](docs/19-架构师实战面试/) | 12 | 场景题、STAR-L 答题骨架、追问链、失败复盘 |
-| | **[00 开始阅读](docs/00-开始阅读/)** | 3 | 知识全景图、学习路线、阅读建议 |
+| | [18 AI 与 LLM 工程化](docs/18-AI与LLM工程化/) | 6 | RAG、Agent/MCP、LLM 应用架构、RAG 进阶、Prompt 工程与评测、向量库 |
+| 📊 **大数据与实时计算** | [19 Java 大数据体系](docs/19-Java大数据体系/) | 9 | HDFS/MapReduce、Hive/Spark、Flink、实时数仓、OLAP、数据湖、数据治理 |
+| 🎯 **出口** | [20 架构师实战面试](docs/20-架构师实战面试/) | 13 | 场景题、STAR-L 答题骨架、追问链、白板与手写代码 |
+| | **[00 开始阅读](docs/00-开始阅读/)** | 6 | 知识全景图、学习路线、阅读建议、术语表、版本基线、参考资料 |
 
 > [!TIP]
 > 建议从 [知识全景地图](docs/00-开始阅读/02-知识全景地图.md) 开始，看清板块之间的依赖关系再决定读什么。
@@ -155,9 +157,10 @@ flowchart LR
 |---|---|
 | 👨‍💻 **工作 1-3 年，想冲高级** | 补齐「只会用、不懂原理」的短板，面试能答出深度 |
 | 🔍 **工作 3-5 年，想读源码** | 从「会用 Spring」到「知道 Spring 内部怎么跑」 |
-| 🧑‍✈️ **准备架构师面试** | 19 板块的场景题库 + 答题框架，不背答案而是训练决策思维 |
+| 🧑‍✈️ **准备架构师面试** | 20 板块的场景题库 + 答题框架，不背答案而是训练决策思维 |
 | 👥 **刚开始带团队** | 方法论板块讲清怎么落地敏捷、怎么避免「僵尸 Scrum」 |
 | 🤖 **想做 AI 应用** | 从 RAG 到 Agent，Java 视角的 LLM 工程化落地 |
+| 📊 **做实时数仓 / 数据平台** | 从 Java 视角理解 HDFS/Spark/Flink，能选型、能排障、能做实时链路 |
 
 > ⚠️ **不适合**：完全零基础。这里假设你会写 Java、用过 Spring、了解基本的多线程概念。
 
@@ -175,6 +178,7 @@ flowchart LR
 | 🧯 线上救火 | 02 GC → 03 Linux → 13 Arthas/监控 → 12 故障排查 |
 | 👥 带团队 | 17 方法论（按团队痛点挑着读） |
 | 🤖 AI 应用 | 18 AI 工程化（动手搭一个最小 RAG） |
+| 📊 大数据 / 实时数仓 | 19 大数据（先全景）→ 07 Kafka → 06 数据库 → 13 可观测性 |
 
 > [!NOTE]
 > 完整路线见 [学习路线与阅读建议](docs/00-开始阅读/03-学习路线与阅读建议.md)。
@@ -193,7 +197,7 @@ flowchart LR
 
 1. 技术细节有依据（能给出源码位置或官方文档）
 2. Mermaid 图语法正确（中文 label 用英文引号包裹）
-3. 面试题至少 10 道，每题有「一句话结论 + 展开 + 加分点」
+3. 面试题 8-10 道，每题有「一句话结论 + 展开 + 加分点」
 
 ---
 
