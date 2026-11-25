@@ -10,9 +10,9 @@
 
 > **读得懂源码 · 答得出面试 · 扛得住线上**
 >
-> 面向高级工程师与架构师的 Java 知识体系，每一篇都走完「**原理 → 源码 → 坑点 → 面试**」的认知闭环。
+> 面向高级工程师与架构师的 Java 知识体系，正文篇目走完「**原理 → 源码 → 坑点 → 面试**」的认知闭环；方法论与场景题篇目按各自结构组织。
 
-[![License](https://img.shields.io/badge/License-AGPL--3.0-3b82f6?style=for-the-badge&logo=gnu&logoColor=white)](LICENSE) [![Articles](https://img.shields.io/badge/Articles-167-22c55e?style=for-the-badge&logo=readthedocs&logoColor=white)](docs/) [![Words](https://img.shields.io/badge/Words-264%E4%B8%87-f97316?style=for-the-badge&logo=bookstack&logoColor=white)](docs/) [![Diagrams](https://img.shields.io/badge/Diagrams-546-ec4899?style=for-the-badge&logo=mermaid&logoColor=white)](docs/) [![PRs Welcome](https://img.shields.io/badge/PRs_Welcome-8b5cf6?style=for-the-badge&logo=github&logoColor=white)](#-贡献)
+[![License](https://img.shields.io/badge/License-AGPL--3.0-3b82f6?style=for-the-badge&logo=gnu&logoColor=white)](LICENSE) [![Articles](https://img.shields.io/badge/Articles-208-22c55e?style=for-the-badge&logo=readthedocs&logoColor=white)](docs/) [![Words](https://img.shields.io/badge/Words-305%E4%B8%87-f97316?style=for-the-badge&logo=bookstack&logoColor=white)](docs/) [![Diagrams](https://img.shields.io/badge/Diagrams-584-ec4899?style=for-the-badge&logo=mermaid&logoColor=white)](docs/) [![docs-check](https://img.shields.io/badge/docs--check-passing-0ea5e9?style=for-the-badge&logo=githubactions&logoColor=white)](.github/workflows/docs-check.yml) [![PRs Welcome](https://img.shields.io/badge/PRs_Welcome-8b5cf6?style=for-the-badge&logo=github&logoColor=white)](#-贡献)
 
 **📚 在线阅读地址：** <https://docs.minims.cn/share/java-stackview>
 
@@ -58,7 +58,7 @@
 
 为了避免误解，先说清楚边界：
 
-- ❌ **不是面试题库。** 虽然每篇都有「面试高频问法」，但那是用来**检验理解**的，不是让你背答案。
+- ❌ **不是让你背答案的题库。** 第 22 板块有真实面经与高频题库，但答案是用来**练判断和表达**的，不是让你背成肌肉记忆；面试官追问两层，背的答案就会露馅。
 - ❌ **不是 API 手册。** 不会告诉你 `StringUtils` 有多少个方法，但会告诉你**字符串拼接为什么在循环里要避免**。
 - ❌ **不吹任何技术。** 讲敏捷也讲「什么情况不该用敏捷」，讲微服务也讲「什么时候单体更合适」。
 
@@ -66,7 +66,7 @@
 
 ## 🚀 五大亮点
 
-### 1️⃣ 每篇都是「原理 → 源码 → 坑点 → 面试」四段式
+### 1️⃣ 多数篇目是「原理 → 源码 → 坑点 → 面试」四段式
 
 不是知识点罗列，而是完整的**认知闭环**。以《集合框架源码》为例：
 
@@ -87,13 +87,13 @@
 | Sentinel | `ProcessorSlotChain` 的责任链 |
 | Raft | 选举限制为什么能防止脑裂 |
 
-### 3️⃣ 546 张 Mermaid 图，全部可编辑
+### 3️⃣ 584 张 Mermaid 图，全部可编辑
 
 不是截图，是**文本化的矢量图**——你可以直接改。涵盖：
 
 > 类图 · 时序图 · 状态机 · 流程图
 
-### 4️⃣ 167 篇按「学习依赖」排序，不是按热度堆砌
+### 4️⃣ 208 篇按「学习依赖」排序，不是按热度堆砌
 
 从「语言」到「AI」再到「大数据」，形成一条**完整路径**。你不会在不懂 JVM 的时候被丢去读分布式事务。
 
@@ -118,36 +118,38 @@ flowchart LR
 
 ---
 
-## 🗺️ 内容地图（20 个板块）
+## 🗺️ 内容地图（22 个板块）
 
-**20 个板块，按「语言 → 底层 → 框架 → 数据 → 分布式 → 架构 → 工程 → 方法论 → AI → 大数据 → 面试」递进：**
+**22 个板块，按「语言/算法 → 底层 → 框架 → 数据 → 分布式 → 架构 → 工程 → 方法论 → AI → 大数据 → 实战项目 → 面试」递进：**
 
 | 层 | 板块 | 篇数 | 核心内容 |
-|---|---:|---:|---|
-| ☕ **语言与系统底层** | [01 Java 语言核心](docs/01-Java语言核心/) | 7 | 集合源码、String 与字符串池、泛型擦除、反射代理、异常日志、Java 8-21 新特性 |
-| | [02 Java 底层与并发](docs/02-Java底层与并发/) | 12 | JVM、GC 调优、JMM、AQS、线程池、ThreadLocal、Netty |
-| | [03 Linux 与网络](docs/03-Linux与网络/) | 6 | USE 排查法、TCP/IP、HTTP/1.1-3、HTTPS/TLS、Nginx、epoll |
-| 🧩 **框架** | [04 Spring 体系源码](docs/04-Spring体系源码/) | 11 | IOC、循环依赖、AOP、事务失效、MVC、Boot 3/4 与 AOT、WebFlux |
-| | [05 MyBatis 与持久层](docs/05-MyBatis与持久层/) | 5 | 执行流程、缓存插件、动态 SQL、连接池、JPA/Hibernate |
-| 🗄️ **数据与中间件** | [06 数据库体系](docs/06-数据库体系/) | 11 | InnoDB、MVCC、锁、SQL 优化、分库分表、PostgreSQL、归档迁移、NoSQL/NewSQL |
-| | [07 缓存与中间件](docs/07-缓存与中间件/) | 10 | Redis、RocketMQ、Kafka、RabbitMQ、Elasticsearch、ZooKeeper |
-| 🏗️ **分布式与架构** | [08 分布式理论与共识](docs/08-分布式理论与共识/) | 8 | CAP、分布式锁、ID、幂等、分布式事务、限流、Raft/Paxos、任务调度 |
-| | [09 微服务体系](docs/09-微服务体系/) | 7 | Nacos、Gateway、Sentinel、Seata、Dubbo |
-| | [10 架构设计能力](docs/10-架构设计能力/) | 5 | DDD、23 种设计模式、架构模式、API 设计、技术选型 |
-| | [11 典型系统设计](docs/11-典型系统设计/) | 10 | 秒杀、支付、IM、短链/Feed、订单库存、营销风控、搜索、推送、对象存储、LBS |
-| 🛡️ **工程与稳定性** | [12 高可用与稳定性](docs/12-高可用与稳定性/) | 7 | 高可用设计、性能优化、限流降级、容量规划、故障排查、单元化多活、混沌工程 |
-| | [13 可观测性](docs/13-可观测性/) | 6 | 三大支柱、链路追踪、Prometheus、日志、Arthas、OpenTelemetry |
-| | [14 容器与云原生](docs/14-容器与云原生/) | 6 | Docker、Kubernetes、Istio、CI/CD、K8s 网络、Operator/GitOps |
-| | [15 安全设计](docs/15-安全设计/) | 6 | 认证授权、接口安全、Web 安全、Spring Security、密码学、供应链安全 |
-| | [16 项目治理](docs/16-项目治理/) | 4 | 代码规范、测试体系、配置管理、架构文档 |
-| 💡 **方法论与前沿** | [17 软件开发方法论](docs/17-软件开发方法论/) | 12 | 瀑布、敏捷、Scrum、Kanban、XP、精益/MVP、SAFe、DevOps |
-| | [18 AI 与 LLM 工程化](docs/18-AI与LLM工程化/) | 6 | RAG、Agent/MCP、LLM 应用架构、RAG 进阶、Prompt 工程与评测、向量库 |
-| 📊 **大数据与实时计算** | [19 Java 大数据体系](docs/19-Java大数据体系/) | 9 | HDFS/MapReduce、Hive/Spark、Flink、实时数仓、OLAP、数据湖、数据治理 |
-| 🎯 **出口** | [20 架构师实战面试](docs/20-架构师实战面试/) | 13 | 场景题、STAR-L 答题骨架、追问链、白板与手写代码 |
-| | **[00 开始阅读](docs/00-开始阅读/)** | 6 | 知识全景图、学习路线、阅读建议、术语表、版本基线、参考资料 |
+|---|---|---|---:|
+| ☕ **语言与基础** | [01 Java 语言核心](docs/01-Java语言核心/) | 8 | 集合源码、List/TreeMap 选型、泛型擦除、反射代理、String、异常日志、Java 8–21 与 JDK 22–25 新特性 |
+| | [02 算法与数据结构](docs/02-算法与数据结构/) | 11 | 复杂度、数组/双指针、链表/哈希/LRU、树/堆/Trie、图、排序、DP、海量数据、算法范式、高级结构、字符串 |
+| | [03 Java 底层与并发](docs/03-Java底层与并发/) | 14 | JVM、GC 调优、JMM、AQS、线程池、ThreadLocal、Netty、JIT 编译、JFR/async-profiler 性能剖析 |
+| | [04 Linux 与网络](docs/04-Linux与网络/) | 6 | USE 排查法、TCP/IP、HTTP/1.1-3、HTTPS/TLS、Nginx、epoll |
+| 🧩 **框架** | [05 Spring 体系源码](docs/05-Spring体系源码/) | 11 | IOC、循环依赖、AOP、事务失效、MVC、Boot 3/4 与 AOT、WebFlux |
+| | [06 MyBatis 与持久层](docs/06-MyBatis与持久层/) | 5 | 执行流程、缓存插件、动态 SQL、连接池、JPA/Hibernate |
+| 🗄️ **数据与中间件** | [07 数据库体系](docs/07-数据库体系/) | 12 | InnoDB、MVCC、锁、SQL 优化、分库分表、PostgreSQL、归档迁移、NoSQL/NewSQL、国产库适配 |
+| | [08 缓存与中间件](docs/08-缓存与中间件/) | 11 | Redis、RocketMQ、Kafka、RabbitMQ、Elasticsearch、ZooKeeper、多级缓存与 Caffeine |
+| 🏗️ **分布式与架构** | [09 分布式理论与共识](docs/09-分布式理论与共识/) | 8 | CAP、分布式锁、ID、幂等、分布式事务、限流、Raft/Paxos、任务调度 |
+| | [10 微服务体系](docs/10-微服务体系/) | 8 | Nacos、Gateway、Sentinel、Seata、Dubbo、OpenFeign 与组件全景 |
+| | [11 架构设计能力](docs/11-架构设计能力/) | 6 | DDD、23 种设计模式、架构模式、API 设计、技术选型、架构评估与质量属性 |
+| | [12 典型系统设计](docs/12-典型系统设计/) | 11 | 秒杀、支付、IM、短链/Feed、订单库存、营销风控、搜索、推送、对象存储、LBS、多租户 SaaS |
+| 🛡️ **工程与稳定性** | [13 高可用与稳定性](docs/13-高可用与稳定性/) | 8 | 高可用设计、性能优化、限流降级、容量规划、故障排查、单元化多活、混沌工程、现场运维 |
+| | [14 可观测性](docs/14-可观测性/) | 6 | 三大支柱、链路追踪、Prometheus、日志、Arthas、OpenTelemetry |
+| | [15 容器与云原生](docs/15-容器与云原生/) | 6 | Docker、Kubernetes、Istio、CI/CD、K8s 网络、Operator/GitOps |
+| | [16 安全设计](docs/16-安全设计/) | 6 | 认证授权、接口安全、Web 安全、Spring Security、密码学、供应链安全 |
+| | [17 项目治理](docs/17-项目治理/) | 6 | 代码规范、测试体系、配置管理、架构文档、Maven/Gradle 构建与依赖治理、技术领导力 |
+| 💡 **方法论与前沿** | [18 软件开发方法论](docs/18-软件开发方法论/) | 12 | 瀑布、敏捷、Scrum、Kanban、XP、精益/MVP、SAFe、DevOps |
+| | [19 AI 与 LLM 工程化](docs/19-AI与LLM工程化/) | 7 | RAG、Agent/MCP、LLM 应用架构、RAG 进阶、Prompt 工程与评测、向量库、模型选型与 Agent 评测护栏 |
+| 📊 **大数据与实时计算** | [20 Java 大数据体系](docs/20-Java大数据体系/) | 10 | HDFS/MapReduce、Hive/Spark、Flink、实时数仓、OLAP、数据湖、数据治理、数据集成与调度 |
+| 🧪 **实战项目** | [21 实战项目](docs/21-实战项目/) | 10 | Spring Boot、Dubbo、Nacos、RocketMQ、SkyWalking、Mall、RuoYi-Vue-Pro、ThingsBoard、Halo、JeecgBoot |
+| 🎯 **出口** | [22 架构师实战面试](docs/22-架构师实战面试/) | 20 | 基础高频题库、四家公司 85 题逐题详解（哈啰/喜茶/蚂蚁/B 站）、哈啰信贷三轮深度面经、7 道业务场景深拆、STAR-L 与白板 |
+| | **[00 开始阅读](docs/00-开始阅读/)** | 5 | 知识全景图、学习路线、阅读建议、术语表、版本基线 |
 
 > [!TIP]
-> 建议从 [知识全景地图](docs/00-开始阅读/02-知识全景地图.md) 开始，看清板块之间的依赖关系再决定读什么。
+> 建议从 [知识全景地图](docs/00-开始阅读/02-知识全景地图.md) 开始，看清板块之间的依赖关系再决定读什么；想看全库规模、分板块数据与维护约定，去 [知识库索引](docs/知识库索引.md)。
 
 ---
 
@@ -157,7 +159,7 @@ flowchart LR
 |---|---|
 | 👨‍💻 **工作 1-3 年，想冲高级** | 补齐「只会用、不懂原理」的短板，面试能答出深度 |
 | 🔍 **工作 3-5 年，想读源码** | 从「会用 Spring」到「知道 Spring 内部怎么跑」 |
-| 🧑‍✈️ **准备架构师面试** | 20 板块的场景题库 + 答题框架，不背答案而是训练决策思维 |
+| 🧑‍✈️ **准备架构师面试** | 22 个板块的场景题库 + 答题框架，不背答案而是训练决策思维 |
 | 👥 **刚开始带团队** | 方法论板块讲清怎么落地敏捷、怎么避免「僵尸 Scrum」 |
 | 🤖 **想做 AI 应用** | 从 RAG 到 Agent，Java 视角的 LLM 工程化落地 |
 | 📊 **做实时数仓 / 数据平台** | 从 Java 视角理解 HDFS/Spark/Flink，能选型、能排障、能做实时链路 |
@@ -172,13 +174,14 @@ flowchart LR
 
 | 你的状态 | 建议路线 |
 |---|---|
-| 🚀 面试突击 | 01 语言核心 → 02 并发 → 06 数据库 → 07 缓存 → 08 分布式 → 04 Spring |
-| 🔬 源码进阶 | 01 语言核心 → 04 Spring → 05 MyBatis → 02 Netty → 07 Redis/MQ |
-| 🏗️ 架构落地 | 08 分布式 → 09 微服务 → 12 高可用 → 10 架构设计 → 11 系统设计 |
-| 🧯 线上救火 | 02 GC → 03 Linux → 13 Arthas/监控 → 12 故障排查 |
-| 👥 带团队 | 17 方法论（按团队痛点挑着读） |
-| 🤖 AI 应用 | 18 AI 工程化（动手搭一个最小 RAG） |
-| 📊 大数据 / 实时数仓 | 19 大数据（先全景）→ 07 Kafka → 06 数据库 → 13 可观测性 |
+| 🚀 面试突击 | 01 语言核心 → 02 算法 → 03 并发 → 07 数据库 → 08 缓存 → 09 分布式 → 05 Spring |
+| 🔬 源码进阶 | 01 语言核心 → 05 Spring → 06 MyBatis → 03 Netty → 08 Redis/MQ |
+| 🏗️ 架构落地 | 09 分布式 → 10 微服务 → 13 高可用 → 11 架构设计 → 12 系统设计 |
+| 🧯 线上救火 | 03 GC → 04 Linux → 14 Arthas/监控 → 13 故障排查 |
+| 👥 带团队 | 18 方法论（按团队痛点挑着读） |
+| 🤖 AI 应用 | 19 AI 工程化（动手搭一个最小 RAG） |
+| 📊 大数据 / 实时数仓 | 20 大数据（先全景）→ 08 Kafka → 07 数据库 → 14 可观测性 |
+| 🧪 实战项目 | 21 实战项目（按「基础设施 → 完整应用」挑 2–3 个精读） |
 
 > [!NOTE]
 > 完整路线见 [学习路线与阅读建议](docs/00-开始阅读/03-学习路线与阅读建议.md)。
@@ -191,13 +194,14 @@ flowchart LR
 
 - 🐛 **纠错**：技术细节有误、源码引用过时（Java 版本迭代快）
 - ⚠️ **补坑**：你在生产环境踩过、但文章没覆盖的坑
-- 📝 **新增篇目**：按现有文章的结构写，保持「原理 → 源码 → 坑点 → 面试」四段式
+- 📝 **新增篇目**：按现有文章的结构写，多数篇目保持「原理 → 源码 → 坑点 → 面试」四段式
 
 **提交前请确认：**
 
 1. 技术细节有依据（能给出源码位置或官方文档）
 2. Mermaid 图语法正确（中文 label 用英文引号包裹）
 3. 面试题 8-10 道，每题有「一句话结论 + 展开 + 加分点」
+4. 本地跑 `python tools/kb_check.py` 通过（死链、编号、围栏、必备小节、篇内导航），CI 也会跑同一脚本
 
 ---
 
